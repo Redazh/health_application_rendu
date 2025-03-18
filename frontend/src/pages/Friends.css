@@ -1,0 +1,142 @@
+/* Conteneur principal */
+.friends-container {
+  width: 90%;
+  max-width: 450px;
+  background-color: #FFFFFF; /* Fond blanc */
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour effet moderne */
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* En-tête */
+.friends-header {
+  background: #00b300;
+  color: white;
+  font-size: 22px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Input pour ajouter un ami */
+.friends-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.friends-input::placeholder {
+  color: gray;
+}
+
+/*Bouton Ajouter un ami */
+.fr-button {
+  width: 100%;
+  background-color: #17BEBB;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Listes (Suggestions, Demandes, Amis) */
+.friends-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Titre des sections */
+.friends-list h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3B945E;
+  margin-bottom: 10px;
+}
+
+/* Listes des amis/demandes */
+.friends-list ion-item {
+  background-color: white !important;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  color: black;
+  padding: 10px;
+}
+
+/* Désactiver l'effet hover sur les IonItems */
+.friends-list ion-item:hover {
+  background-color: white !important;
+}
+
+
+/* Boutons Accepter une demande */
+ion-button[color="success"] {
+  background-color: #28a745 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Boutons Refuser une demande */
+ion-button[color="danger"] {
+  background-color: #dc3545 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Bouton Retour Dashboard */
+.dashboard-button {
+  width: 100%;
+  background-color: #3B945E;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* En-tête avec logo et "Bonjour..." */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #3B945E;
+}
+
+.logo {
+  width: 80px;
+}
+
+.fr-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Icône de profil */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer; 
+  border-radius: 50%; 
+  transition: transform 0.2s ease-in-out;
+}
+
+/*  Effet au survol */
+.profile-icon:hover {
+  transform: scale(1.1); 
+}

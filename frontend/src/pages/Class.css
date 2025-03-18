@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.elegant-header {
+  --background: #2c3e50;
+  --color: #ecf0f1;
+}
+
+.elegant-content {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+  min-height: 100vh;
+}
+
+.elegant-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.elegant-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+}
+
+.elegant-card:hover {
+  transform: translateY(-5px);
+}
+
+.elegant-card h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.elegant-card p {
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+.gauge-row-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gauge-item {
+  flex: 1;
+  text-align: center;
+}
+
+.gauge-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.elegant-button {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.elegant-button:hover {
+  background-color: #34495e;
+}

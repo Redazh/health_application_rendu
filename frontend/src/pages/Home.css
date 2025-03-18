@@ -1,0 +1,85 @@
+/* Ajout d'un fond moderne avec un dégradé dynamique */
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: white;
+}
+
+/* Conteneur centré avec un effet de profondeur */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation d'apparition en douceur */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titres stylisés */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Style des cartes d'information */
+.info-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons créatifs avec un effet Glow */
+.glow-btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Effet Glow Bleu pour le bouton Login */
+.login-btn {
+    background-color: #007AFF;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 122, 255, 0.5);
+}
+
+.login-btn:hover {
+    box-shadow: 0px 0px 25px rgba(0, 122, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Effet Glow Vert pour le bouton Register */
+.register-btn {
+    background-color: #34C759;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(52, 199, 89, 0.5);
+}
+
+.register-btn:hover {
+    box-shadow: 0px 0px 25px rgba(52, 199, 89, 0.8);
+    transform: scale(1.05);
+}

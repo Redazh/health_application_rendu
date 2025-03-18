@@ -1,0 +1,95 @@
+.containerStyle {
+  width: 90%;
+  max-width: 400px;
+  background-color: #FFFFFF; 
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+  
+  .register-header {
+    background: #00b300;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .register-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black; 
+    background-color: white;
+  }
+  
+  .register-input::placeholder {
+    color: gray;
+  }
+  
+  .register-button {
+    width: 100%;
+    background-color: #17BEBB  ;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+
+  
+  .register-link {
+    color: #17BEBB ;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+
+.logoStyle {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.subtitleStyle {
+  font-size: 14px;
+  color: #6B7280; 
+  margin-bottom: 20px;
+}
+
+  
+.custom-select-container {
+  background-color: white !important; /* Fond blanc */
+  border-radius: 8px !important; /* Coins arrondis */
+  border: 1px solid #ccc !important; /* Bordure fine */
+  padding: 10px !important;
+  color: black !important; /* Texte noir */
+  font-size: 16px !important;
+  margin-bottom: 15px !important; /* Espacement entre les champs */
+}
+
+.custom-select-label {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #3B945E !important; /* Texte en vert pour harmonie */
+}
+
+.custom-select-container .sc-ion-select-md-h {
+  background-color: white !important; /* Fond blanc des options */
+  color: black !important; /* Texte noir */
+}
+
+.custom-select-container ion-select-option {
+  padding: 10px !important;
+  font-size: 14px !important;
+}
+

@@ -1,0 +1,148 @@
+/* Centrage complet du profil */
+.ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur complète de l'écran */
+  background-color: #080808; /* Fond sombre */
+}
+
+
+
+/* Conteneur du profil */
+.profile-container {
+  width: 350px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* En-tête du profil */
+.profile-header {
+  background-color: #581845;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Informations du profil */
+.profile-info p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Boutons stylisés */
+.profile-button {
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Boutons de gestion */
+.profile-button.friends {
+  background-color: #5b9bd5;
+  color: white;
+}
+
+.profile-button.groups {
+  background-color: #7f7ce1;
+  color: white;
+}
+
+.profile-button.fitbit {
+  background-color: #16495c;
+  color: white;
+}
+.profile-button.logout {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Effet au survol */
+.profile-button:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+
+
+/* TITRE PRINCIPAL DU QUESTIONNAIRE */
+.dashboard-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* STYLE DES QUESTIONS */
+.question-label {
+  font-weight: bold;
+  color: #ffcc00; /* Jaune */
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* STYLE DES RÉPONSES */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* STYLE DES OPTIONS DE RÉPONSE */
+.radio-item {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+/* Effet au survol */
+.radio-item:hover {
+  background-color: #ced4da;
+}
+
+/* Bouton d'envoi du questionnaire */
+.submit-button {
+  margin-top: 15px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #6200ea;
+}
+
+/* Effet au survol du bouton */
+.submit-button:hover {
+  background-color: #3700b3;
+}
+
+
