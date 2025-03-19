@@ -25,7 +25,7 @@ const Nutrition: React.FC = () => {
   const location = useLocation<LocationState>();
   const history = useHistory();
   const { nutritionPlan } = location.state || {};
-
+  console.log("Parsed Nutrition Plan:", nutritionPlan);
   return (
     <IonPage>
       <IonHeader>
@@ -51,10 +51,25 @@ const Nutrition: React.FC = () => {
 
                   <h3>🛒 Ingrédients</h3>
                   <ul>
-                    {meal.ingredients.map((ingredient, index) => (
-                      <li key={index}>✔️ {ingredient}</li>
-                    ))}
-                  </ul>
+                      {meal.ingredients.map((ingredient, index) => {
+                        if (typeof ingredient === "object" && ingredient !== null) {
+                          return (
+                            <li key={index}>
+                              ✔️{" "}
+                              {Object.entries(ingredient).map(([key, value]) => (
+                                <span key={key}>
+                                  <strong>{key}:</strong> {value}{" "}
+                                </span>
+                              ))}
+                            </li>
+                          );
+                        } else {
+                          return <li key={index}>✔️ {ingredient}</li>;
+                        }
+                      })}
+                    </ul>
+
+
 
                   <h3>👨‍🍳 Instructions</h3>
                   <ol>
